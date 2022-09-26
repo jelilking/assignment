@@ -9,21 +9,35 @@
   </head>
   <body>
     <div class="top">
-      <a href="#" class="topleft">Blogr</a>
-      <a href="#" class="topleft">Product</a>
-      <a href="#" class="topleft">Company</a>
-      <a href="#" class="topleft">Connect</a>
-      <span class="toright">
-        <a href="#">Login</a>
-        <a href="#" class="singup">Sign up</a>
-      </span>
+      <nav class="navbar">
+        <div class="navcenter">
+          <div class="navheader">
+            <a href="#" class="navlogo"
+              ><img src="images/logo.svg" alt="blogr"
+            /></a>
+            <button type="button" class="btn">
+              <img src="/images/icon-hamburger.svg" alt="" />
+            </button>
+          </div>
+          <div class="navlinks">
+            <a href="#" class="navlink">Product</a>
+            <a href="#" class="navlink">Company</a>
+            <a href="#" class="navlink">Connect</a>
+            <div class="malikk">
+              <button type="login" class="navlink login">login</button>
+              <button type="signup" class="navlink signup">signup</button>
+            </div>
+          </div>
+        </div>
+      </nav>
       <br />
       <h1>A modern publishing platform</h1>
-      <h6 id="center">Grow your audience and build your online brand</h6>
+      <p>Grow your audience and build your online brand</p>
 
-      <a href="#" class="start">Start for free</a>
-      <a href="#" class="learn">Learn more</a>
+      <botton class="start">Start for free</botton>
+      <botton class="learn">Learn more</botton>
     </div>
+
     <div class="header">
       <h2>Designed for the future</h2>
     </div>
@@ -56,7 +70,7 @@
     </div>
     <div class="second">
       <div class="main1">
-        <img src="/images/illustration-phones.svg" alt="" />
+        <img src="/images/illustration-phones.svg" class="" alt="" />
       </div>
       <div class="right1">
         <h3>State of the art infrastructure</h3>
@@ -91,45 +105,34 @@
         </p>
       </div>
     </div>
-    <div class="footer">
-      <table class="table">
-        <tr class="white">
-          <th>Blogr</th>
-          <th>Product</th>
-          <th>Company</th>
-          <th>Connect</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a href="#">Overview</a></td>
-          <td><a href="#">About</a></td>
-          <td><a href="#">Contact</a></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a href="#">Pricing</a></td>
-          <td><a href="#">Team</a></td>
-          <td><a href="#">Newsletter</a></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a href="#">Marketplace</a></td>
-          <td><a href="#">Blog</a></td>
-          <td><a href="#">Linkedin</a></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a href="#">Features</a></td>
-          <td><a href="#">Careers</a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><a href="#">Integrations</a></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
+
+    <footer class="pagefooter">
+      <div>
+        <h1>
+          <a href="#"> <img src="images/logo.svg" class="blogr" alt="" /></a>
+        </h1>
+      </div>
+      <div class="product">
+        <h3>Product</h3>
+        <p><a href="#">overview</a></p>
+        <p><a href="#">Pricing</a></p>
+        <p><a href="#">Marketplace</a></p>
+        <p><a href="#">Features</a></p>
+        <p><a href="#">intergration</a></p>
+      </div>
+      <div class="company">
+        <h3>Company</h3>
+        <p><a href="#">About</a></p>
+        <p><a href="#">team</a></p>
+        <p><a href="#">blog</a></p>
+        <p><a href="#">careers</a></p>
+      </div>
+      <div class="connect">
+        <h3>Connect</h3>
+        <p><a href="#">Contact</a></p>
+        <p><a href="#">Newsletter</a></p>
+        <p><a href="#">Linkedin</a></p>
+      </div>
+    </footer>
   </body>
 </html>
