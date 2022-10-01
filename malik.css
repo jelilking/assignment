@@ -10,7 +10,7 @@
     hsl(356, 100%, 66%);
   color: white;
   border-bottom-left-radius: 100px;
-  height: 70vh;
+  height: 60vh;
   line-height: 3rem;
 }
 .navbar {
@@ -140,8 +140,7 @@ body {
   text-align: center;
 }
 .grid {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   column-gap: 100px;
   justify-content: space-between;
   align-items: center;
@@ -154,8 +153,7 @@ body {
 .second {
   background: url(/images/bg-pattern-circles.svg) center/cover no-repeat
     hsl(208, 49%, 24%);
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   column-gap: 40px;
   margin-top: 10px;
   justify-content: center;
@@ -170,8 +168,7 @@ body {
   color: white;
 }
 .third {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   column-gap: normal;
   justify-content: center;
   align-items: center;
@@ -179,9 +176,9 @@ body {
 .right2 {
   width: 400px;
 }
-.main2 {
+/* .main2 {
   margin-left: -300px;
-}
+} */
 footer {
   background-color: hsl(240, 10%, 16%);
   color: white;
@@ -199,39 +196,77 @@ a {
   text-decoration: none;
   color: white;
 }
-@media screen and (min-width: 375px;) {
+@media screen and (max-width: 800px) {
+  img {
+    width: 100%;
+  }
   .top {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .first {
+    margin: auto;
+  }
+  .header {
+    margin-bottom: 2rem;
   }
   .grid {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    text-align: center;
-    align-items: center;
     height: auto;
+    align-items: center;
+    text-align: center;
+    margin: 8px 0;
+  }
+  .align {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+  }
+  .start {
+    padding: 1rem;
+    border-radius: 4rem;
+    margin: 0 8px;
+  }
+  .learn {
+    padding: 1rem;
+    border-radius: 4rem;
+    margin: 0 8px;
   }
   .second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    display: flex;
-    height: auto;
-    flex-direction: column;
+    padding: 2rem;
+  }
+  .right1,
+  .right2,
+  .first {
+    width: 75vw;
   }
   .third {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
   }
-  footer {
+  .pagefooter {
     display: flex;
     flex-direction: column;
     height: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 2rem 0;
   }
 }
