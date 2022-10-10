@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +13,9 @@
   border-bottom-left-radius: 100px;
   height: 60vh;
   line-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .navbar {
   display: flex;
@@ -48,9 +52,10 @@
   /* to do */
   height: 0;
   overflow: hidden;
+  transition: 3s;
 }
-.show-links {
-  height: 310px;
+.showlinks {
+  height: 400px;
 }
 .navlink {
   display: block;
@@ -75,7 +80,7 @@ img {
   width: 100%;
 }
 body {
-  background: linear-gradient((hsl(13, 100%, 72%)), (hsl(353, 100%, 62%)));
+  background: linear-gradient((hsl(13, 100%, 72%) hsl(353, 100%, 62%)));
   color: hsl(207, 13%, 34%);
   font-size: 16px;
   line-height: 25px;
@@ -101,7 +106,6 @@ body {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    /* background-color: red; */
   }
   .navlink {
     padding: 0;
@@ -130,11 +134,11 @@ body {
   }
 }
 
-.top {
+/* .top {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
+} */
 .header {
   margin-top: 3rem;
   text-align: center;
@@ -144,11 +148,13 @@ body {
   column-gap: 100px;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .first {
   width: 400px;
   margin-left: 50px;
+  padding: 2rem 0;
 }
 .second {
   background: url(/images/bg-pattern-circles.svg) center/cover no-repeat
@@ -159,6 +165,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0 100px 0;
+  padding: 2rem 0;
 }
 .main1 {
   object-fit: contain;
@@ -172,13 +179,12 @@ body {
   column-gap: normal;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
 }
 .right2 {
   width: 400px;
 }
-/* .main2 {
-  margin-left: -300px;
-} */
+
 footer {
   background-color: hsl(240, 10%, 16%);
   color: white;
@@ -196,9 +202,35 @@ a {
   text-decoration: none;
   color: white;
 }
+
 @media screen and (max-width: 800px) {
+  .navlink {
+    color: black;
+    background-color: aliceblue;
+  }
   img {
     width: 100%;
+  }
+  .malikk {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .login {
+    border-style: none;
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem 0;
+    border-top: 1px solid blue;
+  }
+  .signup {
+    border-style: none;
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem 0;
+    border-top: 1px solid blue;
   }
   .top {
     display: flex;
